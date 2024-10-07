@@ -1,7 +1,7 @@
 contributors = [
     {
         id: 1,
-        fullname: "Aira",
+        fullname: "Aira Nabila",
         username: "https://github.com/aira-nabila",
     },
 
