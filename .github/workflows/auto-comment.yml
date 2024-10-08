@@ -1,3 +1,5 @@
+name: Auto Comment
+
 on:
   issues:
     types:
@@ -10,6 +12,10 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+      # Step to checkout the repository
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
       - name: Determine event type and set variables
         run: |
           if [[ "${{ github.event_name }}" == 'issues' ]]; then
